@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans';
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('sparkling-wine.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 50px;
+    height: auto;
+    border-radius: 95px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.title h1{
+    font-size: 75px;
+    color: #fff ;
+}
+
+.button{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.btn{
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.5 ease;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.sub-menu{
+    display: none;
+    top:6%;
+    position: relative;
+}
+
+.sub-menu ul{
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 5px;
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+
+}
